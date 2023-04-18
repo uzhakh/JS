@@ -35,7 +35,27 @@
 
 // alert(`Hello, ${user}`);
 
-const isChecked = true,
-  isClose = false;
+// const isChecked = true,
+//   isClose = false;
 
-console.log(isChecked || isClose);
+// console.log(isChecked || isClose);
+
+const nubmberOfFilms = prompt("How many movies have you seen", "");
+
+const personalMovieDB = {
+  count: nubmberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false,
+};
+
+const a = prompt("The last movie you watched?", ""),
+  b = prompt("How did you liked it?", ""),
+  c = prompt("The last movie you watched?", ""),
+  d = prompt("How did you liked it?", "");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
